@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Project 3</title>
+  <link href="css.css" rel="stylesheet" />
+  <link rel="icon" type="image/x-icon" href="logo.png" />
+  <script src="https://kit.fontawesome.com/2cea6ac537.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-bg">
+  <header id="header" class="position-fixed w-100 navbar navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand disabled ps-3" href="#">
+        <img src="logo.png" alt="" id="header-img" />
+      </a>
+
+      <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse" data-bs-target="#nav-bar"
+        aria-controls="nav-bar" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <nav id="nav-bar" class="navbar collapse navbar-collapse px-3">
+        <a class="navbar-brand disabled" href="#">
+          <img src="LoL_Logo_Flat_WHITE.png" height="40px" width="120px" alt="" /></a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#shop">Shop</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <button id="cartb" type="button" class="btn btn-primary position-relative" data-bs-toggle="modal"
+      data-bs-target="#cart">
+      <i class="fa-solid fa-cart-shopping"></i>Cart
+      <span id="cart-content" class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+        0
+      </span>
+    </button>
+  </header>
+
+  <div class="modal fade" id="cart" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="cartLabel" aria-hidden="true">
+    <div class="modal-dialog modal-md modal-dialog-scrollable">
+      <div class="modal-content bg-bg">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="cartLabel">Cart Items</h1>
+          <button type="button" class="btn-close bg-white" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div id="Mcartc" class="modal-body"></div>
+        <div class="modal-footer">
+          <div class="bg-opacity-75 mx-auto p-1 pe-2">
+            <p class="my-auto text-white">
+              Total: <b class="text-danger" id="total">$0.00</b>
+            </p>
+          </div>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">
+            Close
+          </button>
+          <button type="button" class="btn btn-primary">Purchase</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div data-bs-spy="scroll" data-bs-target="#nav-bar" tabindex="0" data-bs-root-margin="0px 0px -40%">
+    <main id="home" class="white">
+      <section class="row m-0">
+        <div class="col-md-5 d-flex align-items-center justify-content-center">
+          <div class="content text-center mt-5">
+            <img class="mx-auto animate" src="assets/star-icon.png" alt="" />
+            <h1>STAR GUARDIAN</h1>
+            <p class="text text-start">
+              Celebrate your fandom and love of everything Star Guardian with
+              official Riot Games Merchandise plushies, apparel, jewelry, and
+              more. From familiar Star Guardian faces to new, we’ll be
+              introducing merch from all corners of the cosmos and every Star
+              Guardian team to date
+            </p>
+            <a href="#about" class="btn btn-primary">Summary</a>
+          </div>
+        </div>
+
+        <div id="vidc" class="col-md-7 m-0 p-0">
+          <div class="bg-ani">
+            <img class="animate-bg" src="assets/animate-bg.svg" alt="" />
+          </div>
+          <div class="hero-media-image d-flex align-items-center justify-content-center">
+            <video id="video" controls class="img-fluid">
+              <source src="assets/video1.mp4" type="video/mp4" />
+
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <section id="about" class="white mt-5 pt-5">
+      <div class="text-center bg-style pb-5">
+        <button class="bg-transparent border-0 mx-auto px-5" type="button" data-bs-toggle="collapse"
+          data-bs-target="#details" aria-expanded="false" aria-controls="collapse">
+          <p class="mx-auto my-auto fs-5 text-white p-3">DETAILS</p>
+        </button>
+      </div>
+
+      <div id="details" class="container collapse px-4 px-lg-5 mt-5">
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-3 row-cols-sm-2 justify-content-around">
+          <div class="card bg-transparent border-gold">
+            <div id="" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/item1.webp" class="img-fluid" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/item2.webp" class="img-fluid" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/item3.webp" class="img-fluid" alt="..." />
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                We have arts that are made and designed by League artist with
+                thier artistic mind!
+              </p>
+            </div>
+          </div>
+
+          <div class="card bg-transparent border-gold">
+            <div id="" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/figure1.webp" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/figure2.webp" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/figure3.webp" class="d-block w-100" alt="..." />
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Some Figures, statues and other collectibles produced by Good
+                Smile Company and other companies
+              </p>
+            </div>
+          </div>
+
+          <div class="card bg-transparent border-gold">
+            <div id="" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="assets/acc1.webp" class="img-fluid" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/acc2.webp" class="img-fluid" alt="..." />
+                </div>
+                <div class="carousel-item">
+                  <img src="assets/acc3.webp" class="img-fluid" alt="..." />
+                </div>
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-text">
+                Some accessories produced by Rock Love Jewelry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="slidericon mt-3">
+      <div class="slide-track">
+        <div class="slide">
+          <img src="assets/co-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/co-logo1.svg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/co-logo2.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/co-logo3.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/co-logo4.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/co-logo5.ico" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/co-logo6.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/co-logo.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/co-logo1.svg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/co-logo2.jpg" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/co-logo3.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/co-logo4.png" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/co-logo5.ico" alt="" />
+        </div>
+        <div class="slide">
+          <img src="assets/co-logo6.png" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <section id="shop" class="py-5">
+      <div class="text-center bg-style overflow-visible pb-5">
+        <button class="bg-transparent border-0 mx-auto px-5" type="button" data-bs-toggle="collapse"
+          data-bs-target="#mer" aria-expanded="false" aria-controls="collapse">
+          <p class="mx-auto my-auto fs-5 text-white p-3">SHOP</p>
+        </button>
+      </div>
+
+      <div id="mer" class="container collapse">
+        <div class="nav justify-content-center tab">
+          <button class="tablinks mx-2 bg-magic active" onclick="openCity(event, 'all')">
+            All
+          </button>
+          <button class="tablinks mx-2 bg-magic" onclick="openCity(event, 'poster')">
+            Poster
+          </button>
+          <button class="tablinks mx-2 bg-magic" onclick="openCity(event, 'figure')">
+            Figure
+          </button>
+          <button class="tablinks mx-2 bg-magic" onclick="openCity(event, 'access')">
+            Accessories
+          </button>
+        </div>
+        <div class="container px-4 px-lg-5 mt-5">
+          <div id="poster"
+            class="tabcontent row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div id="poster1" class="col mb-5"></div>
+            <div id="poster2" class="col mb-5"></div>
+            <div id="poster3" class="col mb-5"></div>
+            <div id="poster4" class="col mb-5"></div>
+          </div>
+          <div id="figure"
+            class="tabcontent row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div id="figure1" class="col mb-5"></div>
+            <div id="figure2" class="col mb-5"></div>
+            <div id="figure3" class="col mb-5"></div>
+            <div id="figure4" class="col mb-5"></div>
+          </div>
+
+          <div id="access"
+            class="tabcontent row gx-4 gx-lg-5 row-cols-1 row-cols-md-3 row-cols-xl-4 justify-content-center">
+            <div id="acc1" class="col mb-5"></div>
+            <div id="acc2" class="col mb-5"></div>
+            <div id="acc3" class="col mb-5"></div>
+            <div id="acc4" class="col mb-5"></div>
+            <div id="acc5" class="col mb-5"></div>
+            <div id="acc6" class="col mb-5"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <hr class="border-gold" />
+
+    <section id="subcribe">
+      <!-- Button trigger modal -->
+
+      <div class="text-center pb-5">
+        <h4 class="text-gold">
+          Finish the form below for subscription and notification
+        </h4>
+        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#form">
+          Subscription
+        </button>
+      </div>
+      <!-- Modal -->
+      <div class="modal fade" id="form" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+          <div class="modal-content border-gold">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                Subscription form
+              </h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container">
+                <form action="Thank_you.html" class="row g-3 needs-validation container mx-auto px-3" novalidate>
+                  <div class="col-md-6">
+                    <label id="name-label" for="name" class="form-label h4">Name</label>
+                    <input type="text" name="name" placeholder="Enter your name" class="form-control" id="name"
+                      required />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">
+                      You must enter your name.
+                    </div>
+                  </div>
+                  <div class="col-md-5 mx-auto">
+                    <label id="email-label" for="email" class="form-label h4">Email</label>
+                    <input type="email" name="email" placeholder="Enter your email" class="form-control" id="email"
+                      pattern="[(\w)(\W\S_)]+@[a-z0-9.-]+\.com" required />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">
+                      Please enter your correct email.
+                    </div>
+                  </div>
+                  <div class="col-md-5">
+                    <label id="number-label" for="phone" class="form-label h4">Phone No.</label>
+                    <input type="tel" name="phone" pattern="^\+?((09|639))+([0-9]{9})"
+                      placeholder="Enter your phone no." class="form-control" id="phone" minlength="11" maxlength="13"
+                      required />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">
+                      Please enter your correct phone no.
+                    </div>
+                  </div>
+
+                  <div class="col-md-4 mx-auto">
+                    <label for="number" class="form-label h4">Age</label>
+                    <input type="number" name="age" placeholder="Enter your age" class="form-control" id="number"
+                      min="1" max="100" required />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div class="invalid-feedback">
+                      Please enter your correct age.
+                    </div>
+                  </div>
+
+                  <hr />
+
+                  <label for="attribute" class="form-check-label h4">
+                    Are you a League of Legends Player?
+                  </label>
+
+                  <label class="form-check-label" for="yes">
+                    <input class="form-check-input" type="radio" name="attribute" value="yes" id="yes" required />
+                    Yes
+
+                    <div class="invalid-feedback">Please select one</div>
+                  </label>
+                  <label class="form-check-label" for="no">
+                    <input class="form-check-input" type="radio" name="attribute" value="no" id="no" required />
+                    No
+                    <div class="invalid-feedback">Please select one</div>
+                  </label>
+                  <label class="form-check-label" for="maybe">
+                    <input class="form-check-input" type="radio" name="attribute" value="maybe" id="maybe" required />
+                    Maybe
+                    <div class="invalid-feedback">Please select one</div>
+                  </label>
+                  <div class="valid-feedback">Looks good!</div>
+                  <hr />
+
+                  <div class="form-floating">
+                    <textarea name="message" id="message" placeholder="Type here..." class="form-control"
+                      style="height: 30vh"></textarea>
+                    <label for="message">Any comments or suggestions</label>
+                  </div>
+
+                  <hr />
+
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required />
+                      <label class="form-check-label" for="invalidCheck">
+                        Agree to terms and conditions
+                      </label>
+                      <div class="invalid-feedback">
+                        You must agree before submitting.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button class="btn btn-primary m-5 px-5" id="submit" type="submit">
+                      Submit form
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        (() => {
+          "use strict";
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          const forms = document.querySelectorAll(".needs-validation");
+
+          // Loop over them and prevent submission
+          Array.from(forms).forEach((form) => {
+            form.addEventListener(
+              "submit",
+              (event) => {
+                if (!form.checkValidity()) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                }
+
+                form.classList.add("was-validated");
+              },
+              false
+            );
+          });
+        })();
+      </script>
+    </section>
+  </div>
+  <script src="routes.js"></script>
+</body>
+<script src="https://replit.com/public/js/replit-badge.js" theme="blue" defer></script>
+
+</html>
